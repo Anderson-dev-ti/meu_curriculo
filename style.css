@@ -99,3 +99,20 @@ div img {
     height: 350px;
     width: 350px;
 }
+
+form input {
+    margin-bottom: 5px;
+    display: block;
+}
+
+fieldset {
+    margin: 10px 0px;
+}
+
+fieldset#areas {
+    padding: 5px;
+}
+
+fieldset#areas label {
+    display: block;
+}

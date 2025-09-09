@@ -75,6 +75,55 @@
                 <img src="imagens/anderson_perfil_500px.jpg" alt="Foto do desenvolvedor">
             </div>
         </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <!-- Formulário com onde o usuário irá inserir os dados para contato -->
+            <form action="#" method="post">
+                <label for="nome">Nome: </label>
+                <input type="text" name="inome" id="nome" required placeholder="Seu nome aqui." required>
+
+                <label for="email">E-mail: </label>
+                <input type="email" name="iemail" id="email" placeholder="Seu e-mail aqui." required>
+                <label for="telefone">Telefone: </label>
+                <input type="tel" name="itelefone" id="telefone" placeholder="Digite seu telefone" required>
+                <label for="mensagem">Mensagem: </label> <br>
+                <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Sua mensagem aqui." required></textarea>
+            </form>
+            <!-- Campo para preferência de contato -->
+            <fieldset>
+                <legend>Como você quer ser contactado?</legend>
+                <label><input type="radio" name="contato" id="email" value="email" required>E-mail:</label> <br>
+                <label><input type="radio" name="contato" id="telefone" required>Telefone: </label> <br>
+                <label><input type="radio" name="contato" id="whatsapp" value="whatsapp" required>Whatsapp: </label>
+            </fieldset>
+            <!-- Campo onde o usuário vai digitar as áreas de interesse -->
+            <fieldset id="areas">
+                <legend>Áreas de interesse</legend>
+                <label><input type="checkbox" name="interesse" value="interesse"> Back End</label>
+                <label><input type="checkbox" name="interesse" value="interesse"> Front End</label>
+                <label><input type="checkbox" name="interesse" value="interesse"> UX</label>
+            </fieldset>
+            <!-- No campo abaixo o usuário deve digitar a linguagem de programação desejada -->
+            <fieldset>
+                <legend>Linguagens de programação</legend>
+                <select name="linguagem" id="linguagem">
+                    <option value="">-- Escolha uma linguagem --</option>
+                    <option value="c">C</option>
+                    <option value="c#">C#</option>
+                    <option value="c++">C++</option>
+                    <option value="go">Go</option>
+                    <option value="java">Java</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="kotlin">Kotlin</option>
+                    <option value="php">PHP</option>
+                    <option value="Python">Python</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="swift">Swift</option>
+                </select>
+            </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </section>
     </main>
 </body>
 </html>
