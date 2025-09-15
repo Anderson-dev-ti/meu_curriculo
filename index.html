@@ -72,28 +72,29 @@
                 <li>Trabalho em Equipe</li>
             </ol>
             <div>
-                <img src="imagens/anderson_perfil_500px.jpg" alt="Foto do desenvolvedor">
+                <img src="imagens/corte.png" alt="Foto do desenvolvedor">
             </div>
         </section>
         <section id="contato">
             <h2>Contato</h2>
             <!-- Formulário com onde o usuário irá inserir os dados para contato -->
-            <form action="#" method="post">
-                <label for="nome">Nome: </label>
-                <input type="text" name="inome" id="nome" required placeholder="Seu nome aqui." required>
-
-                <label for="email">E-mail: </label>
-                <input type="email" name="iemail" id="email" placeholder="Seu e-mail aqui." required>
-                <label for="telefone">Telefone: </label>
-                <input type="tel" name="itelefone" id="telefone" placeholder="Digite seu telefone" required>
-                <label for="mensagem">Mensagem: </label> <br>
-                <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Sua mensagem aqui." required></textarea>
-            </form>
+            <div class="formulario">
+                <form action="#" method="post">
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="inome" id="nome" required placeholder="Seu nome aqui." required>
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="iemail" id="email" placeholder="Seu e-mail aqui." required>
+                    <label for="telefone">Telefone: </label>
+                    <input type="tel" name="itelefone" id="telefone" placeholder="Digite seu telefone" required>
+                    <label for="mensagem">Mensagem: </label>
+                    <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Sua mensagem aqui." required></textarea>
+                </form>
+            </div>
             <!-- Campo para preferência de contato -->
             <fieldset>
                 <legend>Como você quer ser contactado?</legend>
-                <label><input type="radio" name="contato" id="email" value="email" required>E-mail:</label> <br>
-                <label><input type="radio" name="contato" id="telefone" required>Telefone: </label> <br>
+                <label><input type="radio" name="contato" id="email" value="email" required>E-mail:</label>
+                <label><input type="radio" name="contato" id="telefone" required>Telefone: </label>
                 <label><input type="radio" name="contato" id="whatsapp" value="whatsapp" required>Whatsapp: </label>
             </fieldset>
             <!-- Campo onde o usuário vai digitar as áreas de interesse -->
@@ -121,8 +122,8 @@
                     <option value="swift">Swift</option>
                 </select>
             </fieldset>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
+            <input type="button" value="Enviar" class="enviar">
+            <input type="reset" value="Limpar" class="limpar">
         </section>
     </main>
 </body>
